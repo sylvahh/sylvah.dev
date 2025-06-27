@@ -21,7 +21,7 @@ export function Footer() {
               <Mail className="h-5 w-5" />
             </a>
             <a 
-              href="https://github.com/sylvester"
+              href="https://github.com/sylvahh"
               className="p-2 text-muted-foreground hover:text-primary transition-colors duration-200"
               target="_blank"
               rel="noopener noreferrer"
@@ -30,7 +30,7 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </a>
             <a 
-              href="https://linkedin.com/in/sylvester"
+              href="https://linkedin.com/in/sylvester-asoh"
               className="p-2 text-muted-foreground hover:text-primary transition-colors duration-200"
               target="_blank"
               rel="noopener noreferrer"
