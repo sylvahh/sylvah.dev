@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Ubuntu:wght@300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 43 43 43;
+
+    --card: 212 212 212;
+    --card-foreground: 43 43 43;
+
+    --popover: 212 212 212;
+    --popover-foreground: 43 43 43;
+
+    --primary: 43 43 43;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 179 179 179;
+    --secondary-foreground: 43 43 43;
+
+    --muted: 212 212 212;
+    --muted-foreground: 179 179 179;
+
+    --accent: 179 179 179;
+    --accent-foreground: 43 43 43;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+
+    --border: 212 212 212;
+    --input: 212 212 212;
+    --ring: 43 43 43;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 43 43 43;
+    --foreground: 255 255 255;
+
+    --card: 35 35 35;
+    --card-foreground: 255 255 255;
+
+    --popover: 35 35 35;
+    --popover-foreground: 255 255 255;
+
+    --primary: 212 212 212;
+    --primary-foreground: 43 43 43;
+
+    --secondary: 60 60 60;
+    --secondary-foreground: 255 255 255;
+
+    --muted: 50 50 50;
+    --muted-foreground: 179 179 179;
+
+    --accent: 60 60 60;
+    --accent-foreground: 212 212 212;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+
+    --border: 70 70 70;
+    --input: 70 70 70;
+    --ring: 212 212 212;
+  }
+}@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-ubuntu;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
