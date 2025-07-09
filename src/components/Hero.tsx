@@ -1,3 +1,4 @@
+import { variables } from "@/constants/vars";
 import { Mail } from "lucide-react"
 
 export function Hero() {
@@ -22,11 +23,11 @@ export function Hero() {
 						<span className="hidden sm:inline text-2xl">👉</span>
 						<span className="inline sm:hidden text-2xl">👇</span>
 						<a
-							href="mailto:sylvesterasoh.dev@gmail.com"
+							href={`mailto:${variables.EMAIL}`}
 							className="font-mono text-primary dark:text-white hover:text-primary-hover transition-colors duration-200 flex items-center gap-2 group"
 						>
 							<Mail className="h-5 w-5 group-hover:scale-110 transition-transform duration-200 text-sm lg:text-base" />
-							sylvesterasoh.dev@gmail.com
+							{variables.EMAIL}
 						</a>
 					</div>
 				</div>
