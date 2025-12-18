@@ -1,5 +1,4 @@
 
-
 export const experiences = [
 	{
 		title: "Software Engineer",
@@ -33,10 +32,19 @@ export const experiences = [
 
 export const projects = [
 	{
+		title: "Blue Simulator",
+		description:
+			"An AI-powered interview practice platform with real-time voice conversations, featuring speech-to-text, text-to-speech, and intelligent feedback.",
+		github: "https://github.com/sylvahh/blue-simulator",
+		technologies: ["React", "TypeScript", "Tailwind CSS", "Groq API", "Web Audio API"],
+		year: "2025",
+	},
+	{
 		title: "Boo-KI",
 		description:
 			"An AI-powered PDF processing tool that generates contextually relevant responses.",
 		github: "https://github.com/sylvahh/boo-ki",
+		live: "https://www.loom.com/share/9d5b612985f147dbaae33d9210ab1702",
 		technologies: ["React", "Javascript", "Node.js", "Mellisearch", "GPT-3.5-turbo"],
 		year: "2024",
 	},
